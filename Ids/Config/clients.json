@@ -1,0 +1,98 @@
+﻿{
+  "Clients": [
+    {
+      "ClientId": "serviceClient",
+      "AllowedGrantTypes": ["client_credentials"],
+      "ClientSecrets": [
+        {
+          "Description": "",
+          "Type": "SharedSecret",
+          "Value": "secret",
+          "Expiration": null
+        }
+      ],
+      "AllowedScopes":["serviceAPI"]
+    },
+    {
+      "ClientId": "service_interactive_client",
+      "ClientName": "Example service interactive client",
+      "AllowedGrantTypes": ["hybrid"],
+      "RequirePkce": false,
+      "AllowRememberConsent": false,
+      "RedirectUris": ["https://localhost:5002/signin-oidc"],
+      "PostLogoutRedirectUris": ["https://localhost:5002/signout-callback-oidc"],
+      "ClientSecrets": [
+        {
+          "Description": "",
+          "Type": "SharedSecret",
+          "Value": "secret",
+          "Expiration": null
+        }
+      ],
+      "AllowedScopes": ["openid","profile","address","email","serviceAPI","roles"]
+    },
+    {
+      "Enabled": true,
+      "ClientId": "",
+      "ProtocolType": "",
+      "ClientSecrets": [
+        {
+          "Description": "",
+          "Value": "",
+          "Expiration": null,
+          "Type": ""
+        }
+      ],
+      "RequireClientSecret": true,
+      "ClientName": "",
+      "Description": "",
+      "ClientUri": "",
+      "LogoUri": "",
+      "RequireConsent": false,
+      "AllowRememberConsent": true,
+      "AllowedGrantTypes": [],
+      "RequirePkce": true,
+      "AllowPlainTextPkce": false,
+      "RequireRequestObject": false,
+      "AllowAccessTokensViaBrowser": false,
+      "RedirectUris": [],
+      "PostLogoutRedirectUris": [],
+      "FrontChannelLogoutUri": "",
+      "FrontChannelLogoutSessionRequired": true,
+      "BackChannelLogoutUri": "",
+      "BackChannelLogoutSessionRequired": true,
+      "AllowOfflineAccess": false,
+      "AllowedScopes": [],
+      "AlwaysIncludeUserClaimsInIdToken": false,
+      "IdentityTokenLifetime": 300,
+      "AllowedIdentityTokenSigningAlgorithms": [],
+      "AccessTokenLifetime": 3600,
+      "AuthorizationCodeLifetime": 300,
+      "AbsoluteRefreshTokenLifetime": 2592000,
+      "SlidingRefreshTokenLifetime": 1296000,
+      "ConsentLifetime": null,
+      "RefreshTokenUsage": "OneTimeOnly",
+      "UpdateAccessTokenClaimsOnRefresh": false,
+      "RefreshTokenExpiration": "Absolute",
+      "AccessTokenType": "Jwt",
+      "EnableLocalLogin": true,
+      "IdentityProviderRestrictions": [],
+      "IncludeJwtId": true,
+      "Claims": [
+        {
+          "Type": "",
+          "Value": "",
+          "ValueType": "http://www.w3.org/2001/XMLSchema#string"
+        }
+      ],
+      "AlwaysSendClientClaims": false,
+      "ClientClaimsPrefix": "client_",
+      "PairWiseSubjectSalt": "",
+      "UserSsoLifetime": null,
+      "UserCodeType": "",
+      "DeviceCodeLifetime": 300,
+      "AllowedCorsOrigins": [],
+      "Properties": [{"": ""}]
+    }
+  ]
+}

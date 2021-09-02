@@ -1,0 +1,29 @@
+﻿{
+  "ApiScopes": [
+    {
+      "Name": "API",
+      "DisplayName": "Example API",
+      "User Claims": []
+    }
+  ],
+  "ApiResources": [
+    {
+      "Name": "API",
+      "DisplayName": "Example API",
+      "User Claims": []
+    }
+  ],
+  "IdentityResources": [
+    {
+      "Name": "roles",
+      "DisplayName": "Your role(s)",
+      "Description": "",
+      "UserClaims": [
+        "role"
+      ],
+      "Required": false,
+      "Emphasize": false,
+      "ShowInDiscoveryDocument": true
+    }
+  ]
+}
